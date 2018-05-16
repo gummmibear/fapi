@@ -1,0 +1,12 @@
+check:
+    path: /check
+    controller: App\Controller\HealthCheckController::check
+    methods: [GET]
+
+get_flights:
+    path: /find/{from}/{to}
+    controller: App\Controller\FindFlightController::find
+
+flight:
+    path: /flight/{externalId}
+    controller: App\Controller\FlightController::get
